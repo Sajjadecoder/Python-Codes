@@ -13,17 +13,18 @@ def pop ():
         print ("UnderFlow, stack is empty")
     else:
         value = stack[topptr]
+        stack[topptr] = ""
         topptr = topptr - 1
-        print (value)
+        return value
 
 #main program
 stack=[]
-for i in range(11):
+for i in range(5):
       stack.append("")
 global topptr , basepointer , arraysize
 topptr = -1
 basepointer = 0
-arraysize=10
+arraysize=
 
 x = int(input("press 1 to start "))
 while x != -1:
