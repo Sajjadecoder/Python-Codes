@@ -13,20 +13,18 @@ def bubbleSort():
 
 
 bubbleSort()
-#efficient bubblesort
-array = [4,68,25,98,5,13,79,42,76,28]
-def effbubbleSort():
-    noswaps= False
-    boundary = len(array) - 1
+array2 = [8765,654,234,87,345,876,2345]
+def effbubblesort():
+    boundary = 7
+    noswaps = False
     while noswaps == False:
         noswaps = True
-        for y in range(0,boundary):
-            if array[y] > array[y + 1]: #will use < sign for descending order
-                temp = array[y]
-                array[y] = array[y + 1]
-                array[y + 1] = temp
+        for y in range(boundary-1):
+            if array2[y] > array2[y + 1]: #will use < sign for descending order
+                temp = array2[y]
+                array2[y] = array2[y + 1]
+                array2[y + 1] = temp
                 noswaps = False
         boundary = boundary - 1
-    print(array)
-
-effbubbleSort()
+    print (array2)
+effbubblesort()
